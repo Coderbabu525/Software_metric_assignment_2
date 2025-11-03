@@ -102,6 +102,17 @@ This instrument analyzes **lines added**, **lines removed**, and **total churn**
 
 ---
 
+## Included Files
+
+| File | Description |
+|------|-------------|
+| `code_churn_measurement.py` | Main Python script to measure code churn in a Git repository. |
+| `churn_results.json` | Output JSON file containing per-file and per-module churn metrics (generated after running the script). |
+| `top_files_churn.png` | Bar chart of top 10 files with highest churn (generated after running the script). |
+| `module_churn.png` | Bar chart of total churn per module (generated after running the script). |
+
+
+---
 
 ## Installation
 
