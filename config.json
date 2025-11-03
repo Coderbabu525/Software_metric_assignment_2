@@ -1,0 +1,6 @@
+{
+  "forecast_method": "moving_average",
+  "window_size": 4,
+  "forecast_weeks": 3,
+  "alpha": 0.3
+}
