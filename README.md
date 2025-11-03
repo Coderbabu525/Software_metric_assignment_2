@@ -30,14 +30,7 @@ The system supports multiple forecasting methods, including **Naive**, **Moving 
 
 ## Installation
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/defect-inflow-forecasting.git
-cd defect-inflow-forecasting
-```
-
-2. Install required Python packages (recommended to use a virtual environment):
+Install required Python packages (recommended to use a virtual environment):
 
 ```bash
   pip install streamlit pandas numpy matplotlib
@@ -112,17 +105,12 @@ This instrument analyzes **lines added**, **lines removed**, and **total churn**
 
 ## Installation
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/code-churn-instrument.git
-cd code-churn-instrument
-```
-2. Install Python dependencies:
+Install Python dependencies:
 ```bash
 pip install matplotlib
 ```
-3. Ensure you have Git installed and a local clone of the repository
+
+Ensure you have Git installed and a local clone of the repository
 
 
 ## Usage
