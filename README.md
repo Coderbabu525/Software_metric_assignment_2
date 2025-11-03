@@ -35,3 +35,43 @@ The system supports multiple forecasting methods, including **Naive**, **Moving 
 ```bash
 git clone https://github.com/yourusername/defect-inflow-forecasting.git
 cd defect-inflow-forecasting
+```
+
+2. Install required Python packages (recommended to use a virtual environment):
+
+```bash
+  pip install streamlit pandas numpy matplotlib
+```
+
+## Usage
+- Run the Streamlit app:
+  ```bash
+  streamlit run defect_forecast_streamlit.py
+  ```
+- Upload defect data CSV (optional). If not uploaded, the app uses the provided synthetic data (defect_inflow_data.csv).
+- View raw data: The first few rows of historical weekly defects are displayed.
+- Select forecast method: Choose between Naive, Moving Average, EWMA, or Linear.
+- Adjust parameters:
+    Window Size for MA/EWMA
+    Forecast Weeks Ahead (1–6 weeks)
+    EWMA alpha (if using EWMA)
+- View forecast: Displays a table of predicted defects for the selected horizon.
+- Visualize: Historical vs forecasted defects are plotted.
+- Derived indicators: Total defects, average weekly defects, and peak weekly defects are displayed.
+- Export results: Forecasted defects are saved as forecast_output.csv.
+
+
+## Data
+- Synthetic Data: defect_inflow_data.csv simulates weekly defect inflow with seasonality patterns.
+- Columns:
+    week_start: Start date of the week (YYYY-MM-DD)
+    defects_reported: Number of defects reported during that week
+You can replace the synthetic CSV with your own project defect data. The app dynamically adjusts based on the uploaded CSV.
+
+
+## Metrics Explained
+- Total Defects: Sum of all defects reported in the historical period.
+- Average Weekly Defects: Mean defects per week.
+- Peak Weekly Defects: Maximum defects observed in a week.
+- Forecasted Defects: Predicted number of defects for upcoming weeks using the selected model.
+
